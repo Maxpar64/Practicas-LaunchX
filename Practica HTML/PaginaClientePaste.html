@@ -10,6 +10,7 @@
         body {
             margin: 0;
             background-color: rgb(196, 189, 211);
+            padding: 20px 20px 20px 20px;
         }
 
         header {
@@ -26,6 +27,10 @@
             float: left;
             font-size: 60px;
         }
+
+        .listaMuestra{
+            list-style: none;
+        }
     </style>
 </head>
 <body>
@@ -36,14 +41,100 @@
 
     <section>
         <H2>SABORES</H2>
-        <ul>
+        <ul class="listaMuestra">
             <li>Chocolate...............45$</li>
-            <li>Fresa...................97$</li>
-            <li>Frutilla................46$</li>
-            <li>Coco....................55$</li>
-            <li>Banana..................50$</li>
-            <li>Leche...................40$</li>
+            <li>Fresa......................97$</li>
+            <li>Frutilla...................46$</li>
+            <li>Coco.....................55$</li>
+            <li>Banana...................50$</li>
+            <li>Leche....................40$</li>
         </ul>
     </section>
+
+    <section>
+        <H2>ADORNOS</H2>
+        <ul class="listaMuestra">
+            <li>Fresas...............45$</li>
+            <li>Barritas de chocolote......................97$</li>
+            <li>Arandanos...................46$</li>
+            <li>Coco rayado.....................55$</li>
+            <li>Rodajas de banana...................50$</li>
+            <li>Crema batida...................40$</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>
+            Realiza El Pedido de Tu Pastel!!!
+        </h2>
+
+        <form action="/accion.js" id="form1" method="post">
+            <h3>Escoge tus sabores:</h3>
+            <input type="checkbox" id="Sabor1" name="Sabor1" value="Chocolate">
+            <label for="Sabor1">Sabor Chocolate</label>
+            <input type="number" id="ChocolateNo" name="ChocolateNo" placeholder="¿Cuantos Pisos?"><br>
+
+            <input type="checkbox" id="Sabor2" name="Sabor2" value="Fresa">
+            <label for="Sabor2">Sabor Fresa</label>
+            <input type="number" id="FresaNo" name="FresaNo" placeholder="¿Cuantos Pisos?"><br>
+
+            <input type="checkbox" id="Sabor3" name="Sabor3" value="Frutilla">
+            <label for="Sabor3">Sabor Frutilla</label>
+            <input type="number" id="FrutillaNo" name="FrutillaNo" placeholder="¿Cuantos Pisos?"><br>
+
+            <input type="checkbox" id="Sabor4" name="Sabor4" value="Coco">
+            <label for="Sabor4">Sabor Coco</label>
+            <input type="number" id="CocoNo" name="CocoNo" placeholder="¿Cuantos Pisos?"><br>
+
+            <input type="checkbox" id="Sabor5" name="Sabor5" value="Banana">
+            <label for="Sabor5">Sabor Banana</label>
+            <input type="number" id="BananaNo" name="BananaNo" placeholder="¿Cuantos Pisos?"><br>
+
+            <input type="checkbox" id="Sabor6" name="Sabor6" value="Leche">
+            <label for="Sabor6">Sabor Leche</label>
+            <input type="number" id="LecheNo" name="LecheNo" placeholder="¿Cuantos Pisos?"><br>
+
+            <h3>Escoge tus Adornos:</h3>
+
+            <input type="checkbox" id="Adorno1" name="Adorno1" value="Fresas">
+            <label for="Adorno1">Fresas</label><br>
+
+            <input type="checkbox" id="Adorno2" name="Adorno2" value="Barritas_de_chocolote">
+            <label for="Adorno2">Barritas de chocolote</label><br>
+
+            <input type="checkbox" id="Adorno3" name="Adorno3" value="Arandanos">
+            <label for="Adorno3">Arandanos</label><br>
+
+            <input type="checkbox" id="Adorno4" name="Adorno4" value="Coco_Rayado">
+            <label for="Adorno4">Coco Rayado</label><br>
+
+            <input type="checkbox" id="Adorno5" name="Adorno5" value="Rodajas_de_banana">
+            <label for="Adorno5">Rodajas de banana</label><br>
+
+            <input type="checkbox" id="Adorno6" name="Adorno6" value="Crema_batida">
+            <label for="Adorno6">Crema batida</label><br>
+
+
+            <h3> Nos Pasas Tus datos:</h3>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono"><br>
+
+            <label for="correo">Correo:</label>
+            <input type="text" id="correo" name="correo"><br>
+
+            <label for="descripcion">Descripcion extra para el pedido:</label>
+            <input type="text" id="descripcion" name="descripcion" style="width: 300px;"><br><br>
+
+            <input type="submit" value="Realizar Pedido">
+        </form>
+    </section>
+
+    <footer>
+        <center>Desarrollo en practica</center>
+    </footer>
 </body>
 </html>
